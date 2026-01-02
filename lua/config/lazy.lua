@@ -26,6 +26,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "plugins" },
   },
   -- Configure any other settings here. See the documentation for more details.
@@ -35,7 +36,7 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-require("nvim-treesitter.configs").setup({
+require("nvim-treesitter").setup({
 
 		-- A list of parser names, or "all" (the listed parsers MUST always be installed)
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "python", "javascript", "typescript", "jsdoc", "rust", "toml", "ron"},

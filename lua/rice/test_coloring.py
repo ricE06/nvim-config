@@ -35,6 +35,11 @@ class Yippee():
         """
         return self.factorial(n)**2
 
+    def a(self):
+        return self.factorial(3)
+        return self.factorial(2)
+
+
 
 
         
