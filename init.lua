@@ -24,7 +24,6 @@ vim.opt.relativenumber = true
 vim.keymap.set("n", "<M-d>", "<C-d>zz")
 vim.keymap.set("n", "<M-u>", "<C-u>zz")
 
--- we hate WSL all my homies hate WSL
 vim.keymap.set("v", "<M-c>", ":w !clip.exe <CR>")
 
 -- primeagen magic to move stuff around
